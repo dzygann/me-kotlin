@@ -29,14 +29,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
 
-        textViewPlayer1 = findViewById<TextView>(R.id.text_view_p1)
-        textViewPlayer2 = findViewById<TextView>(R.id.text_view_p2)
+        textViewPlayer1 = findViewById(R.id.text_view_p1)
+        textViewPlayer2 = findViewById(R.id.text_view_p2)
 
         for (i in 0..2) {
             for (j in 0..2) {
                 val buttonID = "button_$i$j"
                 val resID = resources.getIdentifier(buttonID, "id", packageName)
-                buttons[i][j] = findViewById<Button>(resID)
+                buttons[i][j] = findViewById(resID)
                 buttons[i][j]?.setOnClickListener(this)
             }
         }
@@ -50,30 +50,34 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
 
 /*
-        if (!((Button) v).getText().toString().equals("")) {
-            return;
-        }
+        if (v instanceof Button) {
+            Button button = (Button) v;
 
-        if (player1Turn) {
-            ((Button) v).setText("X");
-        } else {
-            ((Button) v).setText("O");
-        }
-
-        roundCount++;
-
-        if (checkForWin()) {
-            if (player1Turn) {
-                player1Wins();
-            } else {
-                player2Wins();
+            if (!"".equals(button.getText().toString())) {
+                return;
             }
-        } else if (roundCount == 9) {
-            draw();
-        } else {
-            player1Turn = !player1Turn;
+
+            if (player1Turn) {
+                button.setText("X");
+            } else {
+                button.setText("O");
+            }
+
+            roundCount++;
+
+            if (checkForWin()) {
+                if (player1Turn) {
+                    player1Wins();
+                } else {
+                    player2Wins();
+                }
+            } else if (roundCount == 9) {
+                draw();
+            } else {
+                player1Turn = !player1Turn;
+            }
         }
-        */
+ */
 
 
     }
@@ -142,7 +146,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         roundCount = 0;
         player1Turn = true;
         */
-        
+
     }
 
     private fun resetGame() {
