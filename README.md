@@ -28,7 +28,7 @@ Eine Anleitung findest du [hier](https://www.javatpoint.com/android-emulator).
 
 
 ## Einrichtung
-Ihr könnt das Beispiel über Android Studio herunterladen. 
+Ihr könnt das Repository über Android Studio herunterladen. 
 
 Öffnet Android Studio und drückt im Dialog auf _Get From VCS_ 
 
