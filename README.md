@@ -1,6 +1,6 @@
 # Mobile Engineering - Android App Entwicklung mit Kotlin
 Dieses Repository enthält die Laboraufgaben für die Präsentation Android App Entwicklung mit Kotlin.
-Die Laboraufgabe ist den in Java geschrieben Code in Kotlin umzuschreiben. Das Ergebnis ist ein 
+Die Laboraufgabe ist, den in Java geschrieben Code in Kotlin umzuschreiben. Das Ergebnis ist ein 
 funktionsfähiges TicTacToe-Spiel.
 
 ## Vorbereitung
