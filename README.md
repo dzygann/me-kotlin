@@ -1,4 +1,4 @@
-# me-kotlin
+# Mobile Engineering - Android App Entwicklung mit Kotlin
 Dieses Repository enthält die Laboraufgaben für die Präsentation Android App Entwicklung mit Kotlin.
 Die Laboraufgabe ist den in Java geschrieben Code in Kotlin umzuschreiben. Das Ergebnis ist ein 
 funktionsfähiges TicTacToe-Spiel.
@@ -9,7 +9,7 @@ Folgende Tools werden benötigt:
 - [Git](https://git-scm.com/downloads)
 
 ## Aufgaben
-Die Aufgaben sind in der Klasse `MainActivity`. Ihr findet diese in unter dem Pfad
+Die Aufgaben sind in der Klasse `MainActivity`. Ihr findet diese unter dem Pfad
 `app/src/main/java/de/team/kotlin/tictactoe/MainActivity.kt`.
 
 In der Klasse sind die Methoden `onClick(v: View)` und `resetBoard()`. Diese beiden Methoden 
